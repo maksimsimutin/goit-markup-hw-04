@@ -431,13 +431,75 @@ header .conteiner {
 /*Section client*/
 
 
+
+.clien-heading {
+  margin-top: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}
+.client-list {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 170px;
+  height: 92px;
+  
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  
+
+}
+.client-item {
+  margin-right: 30px;
+ 
+
+}
+.client-item:last-child{
+  margin-right: 0px;
+}
+.client-icon {
+  fill: var(--social-primary);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--quaternary-color);
+}
+.client-icon:hover,
+.client-icon:focus{
+  fill: var(--quaternary-color);
+}
+
+
 /*Footer*/
 
 footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   padding: 60px 0px;
   background-color: var(--secondary-color);
 }
-
+.footer .conteiner {
+  display: flex; 
+  align-items: baseline;
+}
+.footer-link{
+  margin-right: 70px;
+}
 .logo-footer {  
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -480,6 +542,49 @@ footer {
 .address-link:focus {
   color: var(--quaternary-color);
 }
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.footer-social-list {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--quaternary-color);
+}
+.social-list-icon {
+  fill: var(--primary-color);
+}
+
+
+
+
+
 
 /*portfolio secyion*/
 
