@@ -393,18 +393,43 @@ header .conteiner {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*Social list link*/
+
 .social-list {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 .social-link {
-  display: block;
-  
-}
-.social-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   fill: var(--social-primary)
 }
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--quaternary-color);
+  fill: var(--primary-color);
+}
+
+
+
+
+.social-item {
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+.social-list .social-item:last-child{
+  margin-right: 0px;
+}
+
+/*Section client*/
+
 
 /*Footer*/
 
