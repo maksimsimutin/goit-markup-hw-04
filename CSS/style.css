@@ -276,8 +276,8 @@ header .conteiner {
 .info-icon {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  align-items: center;
+  height: 120px;
   background: var(--tertiary-color);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -386,7 +386,7 @@ header .conteiner {
 }
 
 .conteiner-team{
-  padding: 30px 0px;
+  padding: 30px 32px;
   text-align: center;
   background-color: var(--primary-color);
   box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); 
@@ -465,7 +465,6 @@ header .conteiner {
 }
 .client-item {
   margin-right: 30px;
- 
 
 }
 .client-item:last-child{
@@ -476,20 +475,22 @@ header .conteiner {
 }
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--quaternary-color);
-}
-.client-icon:hover,
-.client-icon:focus{
+   border-color: var(--quaternary-color);
+}  
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--quaternary-color);
-}
+ }
+
+ .client-link:hover .client-icon,
+ .client-link:focus .client-icon {
+   border-color: var(--quaternary-color);
+  }
 
 
 /*Footer*/
 
 footer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
   padding: 60px 0px;
   background-color: var(--secondary-color);
 }
@@ -500,7 +501,8 @@ footer {
 .footer-link{
   margin-right: 70px;
 }
-.logo-footer {  
+.logo-footer { 
+  margin-bottom: 20px; 
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -520,8 +522,6 @@ footer {
 
 .address-map {
    display: block;
-   margin-top: 20px;
-
    text-decoration: none;
    color: var(--primary-color);
 }
@@ -581,11 +581,6 @@ footer {
   fill: var(--primary-color);
 }
 
-
-
-
-
-
 /*portfolio secyion*/
 
 .section-portfolio {
@@ -632,6 +627,7 @@ footer {
 .portfolio-btn:focus {
   background-color: var(--quaternary-color);
   color: var(--tertiary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .acting { 
@@ -640,7 +636,8 @@ footer {
 }
 
 .all {  
-   min-width: 73px; 
+   min-width: 73px;
+    
 }
 
 .web-site {
@@ -676,6 +673,12 @@ footer {
   margin-left: 30px; 
 }
 
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .link-img{
     text-decoration: none;
     color: var(--text-primary);
@@ -684,6 +687,7 @@ footer {
 .link-img:hover,
 .link-img:focus{
     color: var(--quaternary-color);
+    
 }
 
 .heading-portfolio-list{
